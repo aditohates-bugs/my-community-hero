@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦸‍♂️ Community Hero: Hyperlocal Problem Solver
 
-## Getting Started
+## 🚀 The Vision
+Communities face fragmented, unverified, and slow reporting of local issues like potholes, water leaks, and damaged infrastructure. **Community Hero** replaces passive reporting with **Autonomous AI Dispatch Logic**. 
 
-First, run the development server:
+Instead of municipal workers manually sorting through vague citizen complaints, our platform leverages multimodal AI to instantly verify, categorize, and prioritize issues, generating an immediate action plan.
 
-```bash
+## 🧠 Agentic Depth & Google Integration
+This project was built to maximize AI agentic capabilities using **Google's Generative AI Ecosystem**:
+* **Google Gemini 1.5 Flash (Multimodal):** Acts as an autonomous dispatcher. When a citizen uploads a photo, the AI does not just describe it; it analyzes the image to determine the specific category, assigns a severity level (Low/Medium/High), and generates a specialized autonomous dispatch action for city workers.
+* **Next.js & React:** For a lightning-fast, SSR-capable citizen portal.
+
+## 🛠️ How It Works
+1. **Report:** A citizen snaps a photo of a local issue and uploads it via the portal.
+2. **Analyze:** The image buffer is securely passed to the Gemini 1.5 Flash API.
+3. **Dispatch:** The AI returns a structured JSON payload containing the verified category, severity, and a recommended action plan.
+4. **Resolve:** Municipal dashboards receive prioritized, pre-assessed data, cutting response times drastically.
+
+## 💻 Local Setup
+\`\`\`bash
+npm install
+# Add your Gemini API key to .env.local as NEXT_PUBLIC_GEMINI_API_KEY
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+\`\`\`
